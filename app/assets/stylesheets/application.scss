@@ -12,8 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require style.css
  */
 
  @import "bootstrap";
  @import "pages";
  @import "sessions";
+
