@@ -2,10 +2,10 @@
 
 <h1>Messages</h1>
 
-<table>
+<table class="table">
   <div class="container">
     <div class="row">
-      <div class="col-sm">
+      <div class="col-lrg">
         User
       </div>
       <div class="col-sm">
@@ -21,7 +21,7 @@
     <div class="container">
     <% @messages.each do |message| %>
       <tr>
-        <td><%= message.user_id %></td>
+        <td><%= message.user.email %></td>
         <td><%= message.content %></td>
         <td><%= link_to 'Show', message %></td>
         <td><%= link_to 'Edit', edit_message_path(message) %></td>
